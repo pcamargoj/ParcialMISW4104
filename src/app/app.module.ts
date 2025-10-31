@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SharedModule } from './shared/shared.module';
 import { VehicleModule } from './vehicle/vehicle.module'
 
 @NgModule({
@@ -13,6 +14,7 @@ import { VehicleModule } from './vehicle/vehicle.module'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    SharedModule,
     HttpClientModule,
     VehicleModule
   ],

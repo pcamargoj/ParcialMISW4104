@@ -1,3 +1,18 @@
-<h1>Hello, {{ title }}</h1>
-
-<app-vehicle-list></app-vehicle-list>
+<div class="grid">
+    <div class="col-12">
+        <div class="banner-wrapper">
+            <h1>{{ title }}</h1>
+            <p-divider />
+            <img src="assets/banner_tusegundazo.png" alt="{{ title }}" class="banner-img" />
+            <p-divider />
+        </div>
+    </div>
+    <div class="col-12 sm:col-12 lg:col-7">
+        <app-vehicle-list></app-vehicle-list>
+    </div>
+    <div class="col-12">
+        <div class="footer-bottom">
+            <p>Contact us: +57 3102105253 - info&#64;tusegundazo.com - &#64;tusegundazo</p>
+        </div>
+    </div>
+</div>

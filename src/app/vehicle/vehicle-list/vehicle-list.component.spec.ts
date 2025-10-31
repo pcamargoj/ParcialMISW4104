@@ -11,17 +11,6 @@ describe('VehicleListComponent', () => {
   let fixture: ComponentFixture<VehicleListComponent>;
   let vehicleService: VehicleService;
 
-  // beforeEach(async () => {
-  //   await TestBed.configureTestingModule({
-  //     declarations: [VehicleListComponent]
-  //   })
-  //   .compileComponents();
-    
-  //   fixture = TestBed.createComponent(VehicleListComponent);
-  //   component = fixture.componentInstance;
-  //   fixture.detectChanges();
-  // });
-
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [HttpClientModule, VehicleModule],

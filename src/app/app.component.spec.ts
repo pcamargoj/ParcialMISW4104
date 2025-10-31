@@ -4,13 +4,15 @@ import { HttpClientTestingModule } from "@angular/common/http/testing";
 
 import { AppComponent } from './app.component';
 import { VehicleListComponent } from "./vehicle/vehicle-list/vehicle-list.component"
+import { SharedModule } from './shared/shared.module';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        HttpClientTestingModule
+        HttpClientTestingModule,
+        SharedModule
       ],
       declarations: [
         AppComponent, VehicleListComponent
@@ -24,16 +26,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ParcialMISW41'`, () => {
+  it(`should have as title 'TuSedundazo.com'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ParcialMISW41');
+    expect(app.title).toEqual('TuSedundazo.com');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ParcialMISW41');
+    expect(compiled.querySelector('h1')?.textContent).toContain('TuSedundazo.com');
   });
 });
